@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter App</title>
+  </head>
+  <body>
+    <h1 id="count">0</h1>
+    <button id="increment">Increment</button>
+    <button id="reset">Reset</button>
+    
+    <script>
+      const countHeading = document.getElementById("count");
+      const incrementButton = document.getElementById("increment");
+      const resetButton = document.getElementById("reset");
+
+      let count = 0;
+
+      
+      incrementButton.addEventListener("click", () => {
+        
+        count++;
+
+       
+        countHeading.innerText = count;
+      });
+
+     
+      resetButton.addEventListener("click", () => {
+       
+        count = 0;
+
+        countHeading.innerText = count;
+      });
+    </script>
+  </body>
+</html>
